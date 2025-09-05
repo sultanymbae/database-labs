@@ -1,0 +1,103 @@
+Microsoft Windows [Version 10.0.22631.5549]
+(c) Корпорация Майкрософт (Microsoft Corporation). Все права защищены.
+
+D:\PostgreSQL\17\pgAdmin 4\runtime>"D:\PostgreSQL\17\pgAdmin 4\runtime\psql.exe" "host=localhost port=5432 dbname=postgres user=postgres sslmode=prefer connect_time
+out=10" 2>>&1
+psql (17.6)
+WARNING: Console code page (866) differs from Windows code page (1251)
+         8-bit characters might not work correctly. See psql reference
+         page "Notes for Windows users" for details.
+Type "help" for help.
+
+postgres=# select student_id, name, email, faculty
+postgres-# from students;
+ student_id |   name   |         email         | faculty
+------------+----------+-----------------------+---------
+          1 | sultan   | sultan@example.com    | sfw-123
+          2 | yatoro   | yatoro@example.com    | las-123
+          3 | collapse | collaspse@example.com | ibl-124
+(3 rows)
+
+
+postgres=# SELECT student_id, faculty FROM students;
+ student_id | faculty
+------------+---------
+          1 | sfw-123
+          2 | las-123
+          3 | ibl-124
+(3 rows)
+
+
+postgres=#
+postgres=# select name, email from students where name = 'sultan';
+  name  |       email
+--------+--------------------
+ sultan | sultan@example.com
+(1 row)
+
+
+postgres=# SELECT name, email FROM students ORDER BY;
+ОШИБКА:  ошибка синтаксиса (примерное положение: ";")
+LINE 1: SELECT name, email FROM students ORDER BY;
+                                                 ^
+postgres=#
+postgres=# SELECT name, email
+postgres-# FROM students
+postgres-# ORDER BY name;
+   name   |         email
+----------+-----------------------
+ collapse | collaspse@example.com
+ sultan   | sultan@example.com
+ yatoro   | yatoro@example.com
+(3 rows)
+
+
+postgres=# SELECT name, email
+postgres-# FROM students
+postgres-# ORDER BY email;
+   name   |         email
+----------+-----------------------
+ collapse | collaspse@example.com
+ sultan   | sultan@example.com
+ yatoro   | yatoro@example.com
+(3 rows)
+
+
+postgres=# SELECT student_id, name, email
+postgres-# FROM students
+postgres-# ORDER BY student_id ASC;
+ student_id |   name   |         email
+------------+----------+-----------------------
+          1 | sultan   | sultan@example.com
+          2 | yatoro   | yatoro@example.com
+          3 | collapse | collaspse@example.com
+(3 rows)
+
+
+postgres=# SELECT name, email
+postgres-# FROM students
+postgres-# ORDER BY name DESC;
+   name   |         email
+----------+-----------------------
+ yatoro   | yatoro@example.com
+ sultan   | sultan@example.com
+ collapse | collaspse@example.com
+(3 rows)
+
+
+postgres=# SELECT name, email FROM students LIMIT 2;
+  name  |       email
+--------+--------------------
+ sultan | sultan@example.com
+ yatoro | yatoro@example.com
+(2 rows)
+
+
+postgres=# SELECT name, email FROM students LIMIT 1;
+  name  |       email
+--------+--------------------
+ sultan | sultan@example.com
+(1 row)
+
+
+postgres=#\q
