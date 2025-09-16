@@ -1,0 +1,5 @@
+"courses_id","course_name","student_ids"
+4,"Machine Learning","{4}"
+2,"Operating Systems","{1,2}"
+3,"Data Structures","{5}"
+1,"Database","{3}"
