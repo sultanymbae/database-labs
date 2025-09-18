@@ -1,0 +1,26 @@
+postgres=# \dt
+              List of relations
+ Schema |      Name       | Type  |  Owner
+--------+-----------------+-------+----------
+ public | courses         | table | postgres
+ public | student_courses | table | postgres
+ public | students        | table | postgres
+(3 rows)
+
+
+postgres=# \d students
+                                  Table "public.students"
+   Column   |  Type  | Collation | Nullable |                   Default
+------------+--------+-----------+----------+----------------------------------------------
+ name       | text   |           | not null |
+ email      | text   |           | not null |
+ faculty    | text   |           | not null |
+ student_id | bigint |           | not null | nextval('students_student_id_seq'::regclass)
+Indexes:
+    "students_pkey" PRIMARY KEY, btree (student_id)
+Referenced by:
+    TABLE "courses" CONSTRAINT "courses_student_id_fkey" FOREIGN KEY (student_id) REFERENCES students(student_id) ON DELETE CASCADE
+    TABLE "student_courses" CONSTRAINT "student_courses_student_id_fkey" FOREIGN KEY (student_id) REFERENCES students(student_id) ON DELETE CASCADE
+
+
+postgres=#
