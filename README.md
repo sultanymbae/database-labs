@@ -18,3 +18,6 @@ pg_dump -U postgres -F c -f carwashcenter_backup.dump carwashcenter_db
 
 Restore:
 pg_restore -U postgres -d carwashcenter_db carwashcenter_backup.dump
+
+link for the presentation 
+https://www.canva.com/design/DAG65XDXHgY/FQ0NITjVt-qFhZNwtwHnPg/edit?utm_content=DAG65XDXHgY&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton
