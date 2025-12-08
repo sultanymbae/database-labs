@@ -1,0 +1,31 @@
+"id","brand","specialnumber","clientid"
+1,"Toyota Camry","01KG123ABC",1
+2,"Honda Fit","02KG456ABZ",1
+3,"BMW X5","01KG777ZZZ",2
+4,"Audi A6","01KG111BBB",3
+5,"Mercedes E200","09KG900QWE",4
+6,"Lexus LX570","01KG999FAT",5
+7,"Toyota Prado","01KG455KDA",6
+8,"Honda Accord","02KG222SSS",7
+9,"Toyota RAV4","05KG777QAZ",8
+10,"BMW 320","01KG990POI",9
+11,"Subaru Forester","07KG551XCC",10
+12,"Toyota Mark II","01KG777MK2",11
+13,"Lexus RX350","01KG808LLL",12
+14,"Mercedes S500","01KG111SRT",13
+15,"Nissan Skyline","01KG333GTR",14
+16,"Mazda Axela","02KG909MMM",15
+17,"Volkswagen Golf","03KG550VVV",16
+18,"Hyundai Tucson","02KG778HJG",17
+19,"Kia Optima","01KG660XWZ",18
+20,"Toyota CHR","01KG123CHR",19
+21,"Mercedes CLA","09KG333CLA",20
+22,"Audi Q7","01KG700BIG",6
+23,"BMW M5","01KG999M5B",4
+24,"Toyota Alphard","01KG444VIP",7
+25,"Honda CRV","02KG995CRV",8
+26,"Hyundai Elantra","03KG778ELA",9
+27,"Kia Sportage","04KG887SPT",12
+28,"Lexus ES350","01KG222ESL",13
+29,"BMW X3","01KG441XTT",17
+30,"Toyota Corolla","01KG990KOR",20
