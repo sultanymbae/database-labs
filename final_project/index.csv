@@ -1,0 +1,6 @@
+"QUERY PLAN"
+"Seq Scan on cars  (cost=0.00..12.62 rows=1 width=344) (actual time=0.053..0.054 rows=0 loops=1)"
+"  Filter: (clientid = 123)"
+"  Rows Removed by Filter: 31"
+"Planning Time: 0.184 ms"
+"Execution Time: 0.085 ms"
